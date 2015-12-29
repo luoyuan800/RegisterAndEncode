@@ -38,106 +38,86 @@ private final ReadUtils readUtils;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new JLabel();
-        jLabel2 = new JLabel();
-        userName = new JTextField();
-        jLabel3 = new JLabel();
-        sourcePath = new JTextField();
-        selectPath = new JButton();
-        password = new JPasswordField();
-        conform = new JButton();
-        cancle = new JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        userName = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        sourcePath = new javax.swing.JTextField();
+        selectPath = new javax.swing.JButton();
+        password = new javax.swing.JPasswordField();
+        conform = new javax.swing.JButton();
 
+        jLabel1.setFont(new java.awt.Font("宋体", 0, 18)); // NOI18N
         jLabel1.setText("数据库文件");
 
+        jLabel2.setFont(new java.awt.Font("宋体", 0, 18)); // NOI18N
         jLabel2.setText("用户名");
 
-        userName.setText(readUtils.read("user"));
+        userName.setFont(new java.awt.Font("宋体", 0, 14)); // NOI18N
+        userName.setText("root");
 
+        jLabel3.setFont(new java.awt.Font("宋体", 0, 18)); // NOI18N
         jLabel3.setText("密码");
 
-        sourcePath.setText(readUtils.read("file"));
+        sourcePath.setFont(new java.awt.Font("宋体", 0, 14)); // NOI18N
+        sourcePath.setText("c:/d/d/access/d.mb");
 
-        selectPath.setFont(new Font("宋体", 0, 10)); // NOI18N
+        selectPath.setFont(new java.awt.Font("宋体", 0, 10)); // NOI18N
         selectPath.setText("浏览");
 
-        password.setText(readUtils.read("password"));
+        password.setFont(new java.awt.Font("宋体", 0, 14)); // NOI18N
+        password.setText("root");
 
+        conform.setFont(new java.awt.Font("宋体", 0, 14)); // NOI18N
         conform.setText("确认");
-        conform.addActionListener(new ActionListener() {
-            @Override public void actionPerformed(ActionEvent e) {
-                conformActionPerformed(e);
+        conform.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                conformActionPerformed(evt);
             }
         });
-        cancle.setText("取消");
 
-        GroupLayout layout = new GroupLayout(this);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
-                layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGap(21, 21, 21)
-                                                .addGroup(layout.createParallelGroup(
-                                                        GroupLayout.Alignment.TRAILING)
-                                                        .addComponent(jLabel3)
-                                                        .addComponent(jLabel2)
-                                                        .addComponent(jLabel1))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(layout.createParallelGroup(
-                                                        GroupLayout.Alignment.LEADING)
-                                                        .addComponent(password, GroupLayout.PREFERRED_SIZE,
-                                                                78, GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(userName, GroupLayout.PREFERRED_SIZE,
-                                                                78, GroupLayout.PREFERRED_SIZE)
-                                                        .addGroup(layout.createSequentialGroup()
-                                                                .addGroup(layout.createParallelGroup(
-                                                                        GroupLayout.Alignment.TRAILING)
-                                                                        .addComponent(cancle)
-                                                                        .addComponent(sourcePath,
-                                                                                GroupLayout.PREFERRED_SIZE,
-                                                                                182,
-                                                                                GroupLayout.PREFERRED_SIZE))
-                                                                .addPreferredGap(
-                                                                        LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(selectPath))))
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGap(37, 37, 37)
-                                                .addComponent(conform)))
-                                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(password, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(sourcePath, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE)
+                    .addComponent(userName))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(selectPath)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(conform)
+                .addGap(154, 154, 154))
         );
         layout.setVerticalGroup(
-                layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.TRAILING, false)
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addComponent(selectPath, GroupLayout.DEFAULT_SIZE, 22,
-                                                        Short.MAX_VALUE)
-                                                .addGap(1, 1, 1))
-                                        .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                                .addComponent(jLabel1)
-                                                .addComponent(sourcePath, GroupLayout.PREFERRED_SIZE,
-                                                        GroupLayout.DEFAULT_SIZE,
-                                                        GroupLayout.PREFERRED_SIZE)))
-                                .addGap(12, 12, 12)
-                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel2)
-                                        .addComponent(userName, GroupLayout.PREFERRED_SIZE,
-                                                GroupLayout.DEFAULT_SIZE,
-                                                GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel3)
-                                        .addComponent(password, GroupLayout.PREFERRED_SIZE,
-                                                GroupLayout.DEFAULT_SIZE,
-                                                GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                        .addComponent(conform)
-                                        .addComponent(cancle))
-                                .addContainerGap(21, Short.MAX_VALUE))
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(sourcePath, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selectPath, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(userName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
+                .addComponent(conform)
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 

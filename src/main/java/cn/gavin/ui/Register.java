@@ -43,121 +43,122 @@ public Register() {
 // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
 private void initComponents() {
 
-	jLabel3 = new JLabel();
-	key = new JTextField();
-	jLabel1 = new JLabel();
-	registButton = new JButton();
-	jLabel2 = new JLabel();
-	jLabel4 = new JLabel();
-	jLabel5 = new JLabel();
-	userAlise = new JTextField();
-	jMenuBar1 = new JMenuBar();
-	jMenu1 = new JMenu();
-	optionButton = new JMenuItem();
-	quitButton = new JMenuItem();
+	jLabel3 = new javax.swing.JLabel();
+        key = new javax.swing.JTextField();
+        registButton = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        userAlise = new javax.swing.JTextField();
+        loadKeyButton = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        optionButton = new javax.swing.JMenuItem();
+        quitButton = new javax.swing.JMenuItem();
 
-	jLabel3.setText("jLabel3");
+        jLabel3.setText("jLabel3");
 
-	setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-	setTitle("注册用户");
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("注册用户");
 
-	key.setFont(new Font("宋体", 0, 14)); // NOI18N
-	key.setHorizontalAlignment(JTextField.CENTER);
-	key.setToolTipText("123dff-1dddd23-1ddd23-12ddd3-123");
+        key.setFont(new java.awt.Font("宋体", 0, 14)); // NOI18N
+        key.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        key.setText("123dff-1dddd23-1ddd23-12ddd3-123");
 
-	jLabel1.setFont(new Font("宋体", 0, 14)); // NOI18N
-	jLabel1.setText("输入用户的标识码");
+        registButton.setFont(new java.awt.Font("宋体", 0, 14)); // NOI18N
+        registButton.setText("注册");
+        registButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                registButtonActionPerformed(evt);
+            }
+        });
 
-	registButton.setFont(new Font("宋体", 0, 14)); // NOI18N
-	registButton.setText("注册");
-	registButton.addActionListener(new ActionListener() {
-		public void actionPerformed(ActionEvent evt) {
-			registButtonActionPerformed(evt);
-		}
-	});
+        jLabel2.setText("点击注册后将会根据用户的标识码");
+        jLabel2.setEnabled(false);
 
-	jLabel2.setText("点击注册后将会根据用户的标识码");
-	jLabel2.setEnabled(false);
+        jLabel4.setText(" 生成只有对应的用户才可以读取的数据文件");
+        jLabel4.setEnabled(false);
 
-	jLabel4.setText(" 生成只有对应的用户才可以读取的数据文件");
-	jLabel4.setEnabled(false);
+        jLabel5.setFont(new java.awt.Font("宋体", 0, 14)); // NOI18N
+        jLabel5.setText("设定用户名");
 
-	jLabel5.setFont(new Font("宋体", 0, 14)); // NOI18N
-	jLabel5.setText("设定用户名");
+        userAlise.setFont(new java.awt.Font("宋体", 0, 14)); // NOI18N
+        userAlise.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        userAlise.setText("aabbc");
 
-	userAlise.setFont(new Font("宋体", 0, 14)); // NOI18N
-	userAlise.setHorizontalAlignment(JTextField.CENTER);
-	userAlise.setToolTipText("aabbc");
+        loadKeyButton.setText("读取key");
 
-	jMenu1.setText("File");
+        jMenu1.setText("File");
 
-	optionButton.setText("设置");
-	optionButton.addActionListener(new ActionListener() {
-		public void actionPerformed(ActionEvent evt) {
-			optionButtonActionPerformed(evt);
-		}
-	});
-	jMenu1.add(optionButton);
+        optionButton.setText("设置");
+        optionButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                optionButtonActionPerformed(evt);
+            }
+        });
+        jMenu1.add(optionButton);
 
-	quitButton.setText("退出");
-	quitButton.addActionListener(new ActionListener() {
-		public void actionPerformed(ActionEvent evt) {
-			quitButtonActionPerformed(evt);
-		}
-	});
-	jMenu1.add(quitButton);
+        quitButton.setText("退出");
+        quitButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quitButtonActionPerformed(evt);
+            }
+        });
+        jMenu1.add(quitButton);
 
-	jMenuBar1.add(jMenu1);
+        jMenuBar1.add(jMenu1);
 
-	setJMenuBar(jMenuBar1);
+        setJMenuBar(jMenuBar1);
 
-	GroupLayout layout = new GroupLayout(getContentPane());
-	getContentPane().setLayout(layout);
-	layout.setHorizontalGroup(
-			layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-					.addComponent(key)
-					.addGroup(layout.createSequentialGroup()
-							.addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-									.addGroup(layout.createSequentialGroup()
-											.addGap(147, 147, 147)
-											.addComponent(jLabel5, GroupLayout.PREFERRED_SIZE, 70, GroupLayout.PREFERRED_SIZE))
-									.addGroup(layout.createSequentialGroup()
-											.addGap(127, 127, 127)
-											.addGroup(layout.createParallelGroup(GroupLayout.Alignment.TRAILING)
-													.addComponent(userAlise, GroupLayout.PREFERRED_SIZE, 108, GroupLayout.PREFERRED_SIZE)
-													.addComponent(jLabel1)))
-									.addGroup(layout.createSequentialGroup()
-											.addGap(67, 67, 67)
-											.addComponent(jLabel4))
-									.addGroup(layout.createSequentialGroup()
-											.addGap(93, 93, 93)
-											.addComponent(jLabel2))
-									.addGroup(layout.createSequentialGroup()
-											.addGap(154, 154, 154)
-											.addComponent(registButton)))
-							.addContainerGap(77, Short.MAX_VALUE))
-	);
-	layout.setVerticalGroup(
-			layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-					.addGroup(layout.createSequentialGroup()
-							.addContainerGap()
-							.addComponent(jLabel5, GroupLayout.PREFERRED_SIZE, 27, GroupLayout.PREFERRED_SIZE)
-							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-							.addComponent(userAlise, GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-							.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-							.addComponent(jLabel1, GroupLayout.PREFERRED_SIZE, 23, GroupLayout.PREFERRED_SIZE)
-							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-							.addComponent(key, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE)
-							.addGap(18, 18, 18)
-							.addComponent(registButton)
-							.addGap(18, 18, 18)
-							.addComponent(jLabel2)
-							.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-							.addComponent(jLabel4)
-							.addContainerGap())
-	);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(147, 147, 147)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(67, 67, 67)
+                        .addComponent(jLabel4))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(93, 93, 93)
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(154, 154, 154)
+                        .addComponent(registButton))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(138, 138, 138)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(loadKeyButton, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(userAlise, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(77, Short.MAX_VALUE))
+            .addComponent(key)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(userAlise, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+                .addGap(10, 10, 10)
+                .addComponent(loadKeyButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(key, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(registButton)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel4)
+                .addContainerGap())
+        );
 
-	pack();
+        pack();
 }// </editor-fold>//GEN-END:initComponents
 
 private void registButtonActionPerformed(ActionEvent evt) {
@@ -270,7 +271,8 @@ private JTextField key;
 private JMenuItem optionButton;
 private JMenuItem quitButton;
 private JButton registButton;
-private JTextField userAlise;
+private JTextField userAlise;    
+private javax.swing.JButton loadKeyButton;
 private ReadUtils readUtils = new ReadUtils();
 // End of variables declaration//GEN-END:variables
 }
