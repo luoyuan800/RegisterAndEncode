@@ -10,12 +10,15 @@
 package cn.gavin.jdbc;
 
 import java.sql.*;
+import java.util.Properties;
 
 public class AccessHelper {
 private Connection connection;
 
 public AccessHelper(String file, String user, String password) {
 	try {
+		Properties pro = new Properties();
+		pro.setProperty("charSet","GB2312");
 		connection = DriverManager.getConnection("jdbc:ucanaccess:" + file, user, password);
 	} catch (SQLException e) {
 		e.printStackTrace();
@@ -24,7 +27,9 @@ public AccessHelper(String file, String user, String password) {
 
 public AccessHelper(String file) {
 	try {
-		connection = DriverManager.getConnection("jdbc:ucanaccess://" + file);
+		Properties pro = new Properties();
+		pro.setProperty("charSet","GB2312");
+		connection = DriverManager.getConnection("jdbc:ucanaccess://" + file, pro);
 	} catch (SQLException e) {
 		e.printStackTrace();
 	}

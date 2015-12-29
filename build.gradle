@@ -16,7 +16,7 @@ dependencies {
 
 task fatJar(type: Jar) {
     manifest {
-
+        attributes "Main-Class":"cn.gavin.ui.Register"
     }
     baseName = project.name + '-all'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }

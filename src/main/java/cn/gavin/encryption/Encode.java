@@ -41,7 +41,7 @@ public Encode(String publicKeyString) throws InvalidKeyException, NoSuchPaddingE
 	cipher.init(Cipher.ENCRYPT_MODE, key);
 }
 public String encode(String source) throws BadPaddingException, IllegalBlockSizeException, UnsupportedEncodingException {
-	byte[] encode = cipher.doFinal(source.getBytes());
+	byte[] encode = cipher.doFinal(source.getBytes("GB2312"));
 	if(encode!=null){
 		return Arrays.toString(encode).replaceAll("\\[|\\]","");
 	}else{

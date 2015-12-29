@@ -13,6 +13,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Properties;
 
 public class SqliteHelper {
 private Connection connection;
@@ -25,6 +26,7 @@ public SqliteHelper(String path, String user, String password) throws ClassNotFo
 }
 
 public SqliteHelper(String path) throws ClassNotFoundException {
+
 	connection = connection(path);
 }
 
@@ -41,6 +43,7 @@ public void close(){
 public Connection connection(String path) throws ClassNotFoundException {
 	try {
 		Class.forName("org.sqlite.JDBC");
+
 		return DriverManager.getConnection("jdbc:sqlite:" + path);
 	} catch (SQLException e) {
 		e.printStackTrace();

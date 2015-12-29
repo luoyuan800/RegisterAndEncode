@@ -30,6 +30,8 @@ public class Register extends JFrame {
  */
 public Register() {
 	initComponents();
+	setLocationRelativeTo(null);
+
 }
 
 /**
@@ -172,6 +174,7 @@ private void registButtonActionPerformed(ActionEvent evt) {
 			progressBar.setValue(0);
 			progressBar.setVisible(true);
 			progressBar.setString("正在生成用户数据");
+			dialog.setLocationRelativeTo(null);
 			dialog.setVisible(true);
 			dialog.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 			for (int i = 1; i <= page; i++) {
@@ -213,6 +216,7 @@ private void optionButtonActionPerformed(ActionEvent evt) {//GEN-FIRST:event_opt
 	dialog.setVisible(true);
 	dialog.setSize(400, 250);
 	dialog.setResizable(false);
+	dialog.setLocationRelativeTo(null);
 }//GEN-LAST:event_optionButtonActionPerformed
 
 private void quitButtonActionPerformed(ActionEvent evt) {//GEN-FIRST:event_quitButtonActionPerformed
